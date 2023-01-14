@@ -12,24 +12,6 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
-
-.navbar {
-  background: #fff;
-}
-
-.navbar {
-  margin: 0 auto;
-  padding: 10px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar a {
-  color: #333;
-  text-decoration: none;
-}
-
 .pages {
   padding: 20px 100px;
   margin: 0 auto;

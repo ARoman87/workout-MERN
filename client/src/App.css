@@ -18,8 +18,18 @@ body {
 }
 
 .home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 660px) {
+  .home {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .pages {
+    padding: 20px 0;
+  }
 }
 

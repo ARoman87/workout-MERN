@@ -3,6 +3,8 @@ import { useWorkoutsContext } from "../../hooks/useWorkoutContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
 
 
+
+
 // Date fns
 import formatDistanceToNow from "date-fns/formatDistanceToNow"
 
@@ -29,13 +31,22 @@ export default function WorkoutDetails(props) {
         }
     }
 
+
     return (
-        <div className="workout-details">
-            <h4>{props.workout.title}</h4>
-            <p><strong>Load (lbs):</strong> {props.workout.load}</p>
-            <p><strong>Reps:</strong> {props.workout.reps}</p>
-            <p>{formatDistanceToNow(new Date(props.workout.createdAt), {addSuffix: true})}</p>
-            <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
+        <div className="workout-container">
+            <div className="workout-details">
+                <h4>{props.workout.title}</h4>
+                <img src={props.workout.img} alt="workout img" />
+                <div className="load">
+                    <p><strong>Load (lbs):</strong> {props.workout.load}</p>
+                    <p><strong>Reps:</strong> {props.workout.reps}</p>
+                </div>
+                <div className="lower">
+                    <p>{formatDistanceToNow(new Date(props.workout.createdAt), {addSuffix: true})}</p>
+                    <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
+                </div>
+                
+            </div>
         </div>
     )
 }

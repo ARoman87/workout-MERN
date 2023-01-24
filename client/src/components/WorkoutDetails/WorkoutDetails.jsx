@@ -18,7 +18,7 @@ export default function WorkoutDetails(props) {
             return
         }
 
-        const response = await fetch("http://localhost:4000/api/workouts/" + props.workout._id, {
+        const response = await fetch("https://workout-log-api.onrender.com/api/workouts/" + props.workout._id, {
             method: "DELETE",
             headers:  {
                 "Authorization": `Bearer ${user.token}`

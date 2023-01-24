@@ -22,6 +22,20 @@ body {
   justify-content: space-between;
 }
 
+.login-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button button {
+  width: 70px;
+}
+
+.login-button p{
+  font-size: 10px;
+  margin: -4px;
+}
+
 
 @media screen and (max-width: 660px) {
   .home {

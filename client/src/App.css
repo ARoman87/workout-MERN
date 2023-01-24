@@ -31,6 +31,10 @@ body {
   .pages {
     padding: 20px 0;
   }
+
+  .login, .signup {
+    width: 85%;
+  }
 }
 
 

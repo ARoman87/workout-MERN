@@ -12,7 +12,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchWorkouts = async () => {
-            const response = await fetch("https://workout-log.onrender.com/api/workouts", {
+            const response = await fetch("https://workout-log-api.onrender.com/api/workouts", {
                 headers: {
                     "Authorization": `Bearer ${user.token}`
                 }
